@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default remote="yocto" revision="refs/heads/krogoth"/>
+
+  <!-- You can have as many remote repositories as you like -->
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="qt5" fetch="git://github.com/meta-qt5" />
+  <!-- List all the repositories you want to fetch -->
+  <!-- "name": git repository's name on hosting server
+       "remote": the remote host from above (if not the default)
+       "revision": commitish to checkout (if not the default)
+       "path": directory where git repository gets cloned/synced -->
+  
+  <project name="poky" revision="refs/heads/krogoth" remote="yocto" />
+  <project name="meta-openembedded" revision="refs/heads/krogoth"  remote="oe" path="poky/meta-openembedded" />
+  <project name="meta-qt5" revision="refs/heads/krogoth"  remote="qt5" path="poky/meta-qt5" />
+  <project name="meta-qt4" revision="refs/heads/krogoth"  remote="yocto" path="poky/meta-qt4" />
+  <project name="meta-raspberrypi" revision="refs/heads/master"  remote="yocto" path="poky/meta-raspberrypi" />
+
+</manifest>
