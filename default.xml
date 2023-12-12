@@ -6,6 +6,7 @@
   <remote name="yocto" fetch="git://git.yoctoproject.org" />
   <remote name="oe" fetch="git://git.openembedded.org" />
   <remote name="rauc" fetch="https://github.com/rauc"/>
+  <remote name="hamed" fetch="https://github.com/hamedrafi"/>
  
   <!-- List all the repositories you want to fetch -->
 
@@ -19,5 +20,6 @@
   <project name="meta-openembedded" revision="refs/heads/kirkstone"  remote="oe" path="sources/meta-openembedded" />
   <project name="meta-raspberrypi" revision="refs/heads/kirkstone"  remote="yocto" path="sources/meta-raspberrypi" />
   <project name="meta-rauc" remote="rauc" revision="refs/heads/kirkstone" path="sources/meta-rauc"/>
+  <project name="meta-hoo" remote="hamed" revision="refs/heads/kirkstone" path="sources/meta-hoo"/>
 
 </manifest>
